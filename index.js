@@ -5,9 +5,9 @@ app.listen(3000)
 
 app.post('/user',(req,res)=>{
     const user={
-        name:req.body.name,
+        fullName:req.body.fullName,
         age:req.body.age
     }
-    res.send(`your name is ${name} and age is ${age}`)
+    res.send(`your name is ${user.fullName} and age is ${user.age}`)
 })
 
