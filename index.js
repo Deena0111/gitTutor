@@ -11,3 +11,11 @@ app.post('/user',(req,res)=>{
     res.send(`your name is ${user.fullName} and age is ${user.age}`)
 })
 
+app.get('/getUser',(req,res)=>{
+    const user={
+        name:"wood",
+        age:30
+    }
+    res.send(`your name is ${user.name} and age is ${user.age}`)
+})
+
